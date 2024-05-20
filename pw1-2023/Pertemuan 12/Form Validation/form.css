@@ -1,0 +1,36 @@
+*{
+    margin: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+.error-message {
+    color: red;
+}
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button[type="button"] {
+    background-color: green;
+}

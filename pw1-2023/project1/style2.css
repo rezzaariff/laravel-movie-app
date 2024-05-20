@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+}
+#navbar{
+  display: flex;
+  flex-direction: row;
+}
+#hero {
+    background-image: url(assets/img/background-netflix.jpg);
+    width: 100%;
+    min-height: 100vh;
+}
+#hero .container .row h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#hero .container .row p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+#hero .container .row .search-box{
+    position:sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    border-radius: 20px;
+}
+#hero .container .row .search-box.active{
+    top: 110%;
+    box-shadow: black;
+    transition: 0.2s all linear;
+}
+#hero .container .row .search-box input{
+    padding: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+}
+#hero .container .row .search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+#sponsor {
+    background:rgb(255, 255, 255);
+    margin-right: 200xpx;
+}
+#sponsor p{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+}
+.logo-sponsor{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 50%;
+    justify-content:center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+}
+#data-gallery{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-top: 1px;
+  }
+.gallery h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-size:larger;
+}
+.gallery p{
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+}
+.poster{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+#gallery{
+    transition-duration: 0.5s;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+#gallery :hover{
+    transform:scale(1.1); 
+    opacity: 1; 
+    z-index: 2;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+#gallery2{
+    transition-duration: 0.5s;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+#gallery2 :hover{
+    transform:scale(1.1); 
+    opacity: 1; 
+    z-index: 2;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+#gallery3{
+    transition-duration: 0.5s;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+#gallery3 :hover{
+    transform:scale(1.1); 
+    opacity: 1; 
+    z-index: 2; 
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+.section-title{
+    text-align: center;
+    color: white;
+}
+.section-title h2{
+    font-weight: bold;
+}
+.section-title p{
+    font-weight: 600;
+    color: #ffffff;
+}
+#pricing{
+    background: rgb(255, 255, 255);
+    margin-top: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: gray 2px solid;
+}
+.pricing .box {
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #6d6d6d;
+}
+  
+.pricing .box h3 {
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+  
+.pricing .box h4 {
+    font-size: 42px;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+}
+  
+.pricing .box h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+}
+  
+.pricing .box h4 span {
+    color: #2a2929;
+    font-size: 16px;
+    font-weight: 300;
+}
+  
+.pricing .box ul {
+    padding: 0;
+    list-style: none;
+    color: #222222;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+.pricing .box ul li {
+    padding-bottom: 16px;
+  }
+  
+.pricing .box ul i {
+    color: #000000;
+    font-size: 18px;
+    padding-right: 4px;
+}
+  
+.pricing .box ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+  
+.pricing .box .btn-wrap {
+    padding: 15px;
+    text-align: center;
+}
+  
+.pricing .box .btn-buy {
+    display: inline-block;
+    padding: 10px 40px 12px 40px;
+    border-radius: 50px;
+    border: 2px solid #404040;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+  
+.pricing .box .btn-buy:hover {
+    background: #000000;
+    color: #ffffff;
+}
+  
+.pricing .recommended {
+    border-color: #00aaff;
+}
+  
+.pricing .recommended .btn-buy {
+    background: #000000;
+    color: #ffffff;
+}
+  
+.pricing .recommended .btn-buy:hover {
+    background: #ffffff;
+    border-color: #000000;
+    color: #000000;
+}
+#contact{
+    padding-left: 370px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(255, 255, 255);
+    border: gray 1px solid;
+}
+.contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+  }  
+.contact .php-email-form {
+    width: 100%;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+  
+.contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+  
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+  
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+  
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+  
+.contact .php-email-form .form-group {
+    margin-bottom: 20px;
+}
+  
+.contact .php-email-form label {
+    padding-bottom: 8px;
+}
+  
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+  
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #47b2e4;
+}
+  
+.contact .php-email-form input {
+    height: 44px;
+}
+  
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+  
+.contact .php-email-form button[type=submit] {
+    background: #000000;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+  
+.contact .php-email-form button[type=submit]:hover {
+    background: #ffffff;
+    color: black;
+    border: #000000 1px solid;
+}
+label {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #454545;
+  color: #ffffff;
+}
+#footer {
+  background: #000000;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: center;
+  display: grid;
+  grid-template-columns:auto ;
+  margin-top: 1px;
+  font-size: 14px;
+}
+#footer .container .text p{
+    text-align: center;
+    font-weight: 600;
+
+}
+.copyright{
+    font-weight: 600;
+    padding-right: 200px;
+}

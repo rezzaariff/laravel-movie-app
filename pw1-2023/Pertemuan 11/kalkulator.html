@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Lingkaran</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="lingkaranForm">
+    <label for="radius">Masukkan jari-jari lingkaran:</label>
+    <input type="number" id="radius" name="radius" onChange="hitung()">
+  </form>
+
+  <div id="result">
+    <p><strong>Luas:</strong> <span id="luas">0</span></p>
+    <p><strong>Keliling:</strong> <span id="keliling">0</span></p>
+  </div>
+
+  <script>
+    function hitung() {
+      var radius = parseFloat(document.getElementById('radius').value);
+
+      var luas = Math.PI * Math.pow(radius, 2);
+      var keliling = 2 * Math.PI * radius;
+
+      document.getElementById('luas').innerText = luas.toFixed(2);
+      document.getElementById('keliling').innerText = keliling.toFixed(2);
+    }
+
+    document.getElementById('radius').addEventListener('input', hitung);
+  </script>
+
+</body>
+</html>

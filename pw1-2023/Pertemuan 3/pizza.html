@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+</head>
+<body>
+    <header>
+    <h3> Black Goose Bistro | Pizza-on-Demand </h3>
+    </header>
+
+<main>
+
+    <section>
+        <p> Our 12" wood-fired pizzas are available for delivery.
+            Build your custom pizza and we"ll deliver it within an hour.</p>
+    </section>
+<form>
+        <fieldset> <legend>Your Information</legend>
+            <ul>
+            <li>
+            <label>Name:</label>
+            <input type="text">
+            </li>
+
+            <li>
+            <label>Address:</label>
+            <input type="text">
+            </li>
+
+            <li>
+            <label> Telephone Number:</label>
+            <input type="tel">
+            </li>
+
+            <li>
+            <label>Email:</label>
+            <input type="email">
+            </li>
+
+            <li>Delivery Intructions:<br>
+            <textarea name="Delivery Intructions" rows="5" cols="70" maxlength="400"></textarea>
+            </li>
+            </ul>
+        </fieldset>
+
+            <h4>Design Your Dream Pizza:</h4> 
+
+            <fieldset> <legend> Pizza Specs:</legend>
+            <fieldset> <legend>Crust <em>(Choose One)</em></legend>
+            
+                <label><input type="radio" name="crust" value="white">
+                Classic white 
+                </label><br>
+                
+                <input type="radio" name="crust" value="multigrain"> 
+                Multigrain<br>
+                
+                <input type="radio" name="crust" value="cheese crust">
+                Cheese-stuffed crust
+                <br>
+                
+                <input type="radio" name="crust" value="gluten free">
+                Gluten-free
+                <br>
+            </fieldset>
+        </ul>
+        <fieldset>
+         <legend>Toppings <em>(Chose as many as you want:)</em></legend>
+
+         <input type="checkbox" checked>
+            <label>Red Sauce</label>
+            <br>
+
+            <input type="checkbox">
+            <label>White Sauce</label>
+            <br>
+
+            <input type="checkbox">
+            <label>Mozarella Cheese</label>
+            <br>
+            
+            <input type="checkbox">
+            <label>Pepperoni</label>
+            <br>
+
+            <input type="checkbox">
+            <label>Mushrooms</label>
+            <br>
+
+            <input type="checkbox">
+            <label>Peppers</label>
+            <br>
+
+            <input type="checkbox">
+            <label>Anchovies</label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number:</legend>
+            <p>How many pizzas:
+                <select name="pizzas" size="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+          </select>
+          </p>
+         </fieldset>
+
+         <input type="submit" value="Submit">
+
+         <input type="reset" value="Reset">
+</form>
+         </main>
+        </fieldset>
+</body>
+</html>

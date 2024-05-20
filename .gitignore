@@ -1,4 +1,0 @@
-movie-app/resources/views/genres/index.blade.php
-movie-app/resources/views/movies/index.blade.php
-movie-app/resources/views/reviews/index.blade.php
-movie-app/routes/web.php

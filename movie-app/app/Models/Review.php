@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Review extends Model
 {
     use HasFactory;
+    protected $fillable = ['id', 'poster', 'movie_id', 'user', 'rating', 'date'];
 
     public function movie()
     {
